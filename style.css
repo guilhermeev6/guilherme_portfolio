@@ -6,6 +6,7 @@
     --ciano-escuro: #00383f;
     --black: #001417;
     --white: #F7F8F3;
+    --popins: 'Poppins', sans-serif;
 }
 
 .homeSection{
@@ -15,11 +16,35 @@
 }
 
 .fixed-nav{
-    display: block;
+    width: 100%;
+    height: 70px;
+    display: flex;
     position: fixed;
     background-color: var(--black);
 }
 
+.contact{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.links a{
+    font-family: var(--popins);
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .title{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--popins);
 }
