@@ -1,12 +1,13 @@
 *{margin: 0; padding: 0;}
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@500 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
 
 :root{
     --ciano: #00b7cb;
     --ciano-escuro: #00383f;
-    --black: #001417;
+    --black: #191915;
     --white: #F7F8F3;
     --popins: 'Poppins', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
 }
 
 .homeSection{
@@ -20,31 +21,117 @@
     height: 70px;
     display: flex;
     position: fixed;
-    background-color: var(--black);
+    background-color: transparent;
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.links{
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+}
+
+.links li{
+    margin: 10px;
+}
+
+.links a{
+    font-family: var(--popins);
+    font-size: 18px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 60ms ease;
+}
+
+.links a:hover{
+    border-bottom: 3px solid var(--black);
+    transition: 60ms ease;
 }
 
 .contact{
     display: flex;
-    width: 70%;
+    width: 40%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .contact img{
     margin: 10px;
     width: 30px;
     height: 30px;
+    transition: all 0.2s ease-in;
 }
 
-
-.links a{
-    font-family: var(--popins);
-    color: var(--white);
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
+.contact a:hover{
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in;
 }
 
 .title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 230px;
+    font-family: var(--montserrat);
+    font-size: 25px;
+    gap: 50px;
+    align-items: center;
+    width: 85%;
+    height: 200px;
+}
+
+.title h1{
+    cursor:default;
+    -webkit-user-select: none;
+    
+}
+
+.title span{
+    color: var(--ciano);
+}
+
+.button{
+    align-self: flex-start;
+    margin-left: 160px;
     font-family: var(--popins);
+    border: 2px solid var(--ciano);
+    padding: 10px;
+    transition: all 0.1s ease-in
+}
+
+.button a{
+    text-decoration: none;
+    padding: 13px;
+    font-weight: bold;
+    color: var(--ciano);
+    transition: all 0.1s ease-in
+}
+
+.button:hover{
+    background-color: var(--ciano);
+    transition: all 0.1s ease-in
+    
+}
+
+.button a:hover{
+    color: var(--white);
+    transition: all 0.1s ease-in
 }
